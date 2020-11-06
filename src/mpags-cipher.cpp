@@ -22,9 +22,10 @@ int main(int argc, char* argv[])
   std::string outputFile {""};
   std::string cipher_key {""};
   bool encrypt {true};
+  
 
   // Process command line arguments
-  bool cmdLineStatus { processCommandLine(cmdLineArgs, helpRequested, versionRequested, inputFile, outputFile, cipher_key, encrypt) };
+  bool cmdLineStatus { processCommandLine(cmdLineArgs, programSettings) };
 
   // Any failure in the argument processing means we can't continue
   // Use a non-zero return value to indicate failure
