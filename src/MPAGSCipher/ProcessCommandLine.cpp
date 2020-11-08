@@ -4,7 +4,8 @@
 // Our project headers
 #include "ProcessCommandLine.hpp"
 
-bool processCommandLine(const std::vector<std::string>& args, programSettings& settings)
+
+bool processCommandLine(const std::vector<std::string>& args, ProgramSettings& settings)
 {
   // Status flag to indicate whether or not the parsing was successful
   bool processStatus(true);
